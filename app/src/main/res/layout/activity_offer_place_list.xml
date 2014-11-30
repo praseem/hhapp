@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+
+    tools:context="sudosaints.com.testsample.OfferPlaceListActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/lay"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true" />
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="24sp"
+        android:typeface="normal"
+        android:id="@+id/textoffer"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/basecolor3"
+        android:text="Extended Happy Hour"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="20dp"
+        android:id="@+id/list"
+        android:divider="@color/transparentbck"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lay"></ListView>
+
+</RelativeLayout>

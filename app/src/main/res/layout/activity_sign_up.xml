@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/signupscreen"
+    tools:context="sudosaints.com.testsample.SignUpActivity">
+
+<View
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/sign_in_mug"
+    android:layout_marginTop="40dp"
+    android:id="@+id/view"></View>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/view"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp"
+        android:textSize="20sp"
+
+        android:shadowColor="#000000"
+        android:background="@drawable/sign_in_button"
+        android:text="LOGIN WITH FACEBOOK"
+        android:id="@+id/fbsignup"
+        android:elevation="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/fbutton"
+        android:layout_below="@+id/viewpager"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        </View>
+</RelativeLayout>

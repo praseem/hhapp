@@ -1,0 +1,96 @@
+<RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_below="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_height="120dp"
+        android:layout_width="fill_parent"
+        android:id="@+id/lay"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+
+
+            <sudosaints.com.testsample.KenBurnsView
+                android:id="@+id/header_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                                android:src="@drawable/picture0"></sudosaints.com.testsample.KenBurnsView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:alpha=".3"
+                android:layout_height="match_parent"
+                android:background="@color/black"></View>
+
+            <ImageView
+                android:id="@+id/header_logo"
+                android:layout_width="50dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:alpha=".9"
+                android:background="@drawable/sign_in_mug"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal|top"
+                />
+            <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true" />
+
+
+            <sudosaints.com.testsample.SlidingTabLayout
+                android:id="@+id/sliding_tabs"
+                android:background="@color/transparentbck"
+                android:alpha="1"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal|bottom" />
+        </RelativeLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+android:layout_below="@+id/header"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            />
+
+
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/navdrawer"
+
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="#463268"
+        android:choiceMode="singleChoice"
+        android:divider="#37474f"
+        android:drawSelectorOnTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header"></ListView>
+</android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
